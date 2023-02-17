@@ -1,14 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "./styles/themes/default";
-import { GlobalStyle } from "./styles/global";
+import { useState } from "react"
+import reactLogo from "./assets/react.svg"
+import { ThemeProvider } from "styled-components"
+import { defaultTheme } from "./styles/themes/default"
+import { GlobalStyle } from "./styles/global"
+import { Transactions } from "./pages/Transactions"
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      <div></div>
+      <Transactions />
     </ThemeProvider>
-  );
+  )
 }
